@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "0edc29ab-6841-457b-ae93-f1ef42911207",
+		"name": "flurn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllSeats",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "insertSeatList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/insertSeatList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"insertSeatList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertSeatPrice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/insertSeatList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"insertSeatList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSeatInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/getSeatInfo/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"getSeatInfo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "619153430-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Rishabh Saxena\",\r\n    \"Email\":\"rishabhtest00@gmail.com\",\r\n    \"phoneNumber\":\"9690697279\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Hi\",\r\n    \"email\":\"rishabhtest00@gmail.com\",\r\n    \"seat_ids\":[\"624930451-7\",\"156589821-4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/createBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookingINfo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
